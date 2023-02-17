@@ -9,7 +9,7 @@ trait WithBulkActions
 {
     use BulkActionsConfiguration,
         BulkActionsHelpers;
-    
+
     public bool $bulkActionsStatus = true;
     public bool $selectAll = false;
     public array $bulkActions = [];

@@ -31,12 +31,19 @@ body:
           placeholder: 2.12.0
       validations:
           required: true
-    - type: input
+    - type: dropdown
       id: php-version
       attributes:
           label: PHP Version
           description: What version of PHP are you running? Please be as specific as possible
-          placeholder: 8.2.0
+          multiple: false
+          options: 
+            - < 7.4
+            - 7.4.x
+            - 8.0.x
+            - 8.1.x
+            - 8.2.x
+            - 8.3.x
       validations:
           required: true
     - type: input
@@ -51,7 +58,7 @@ body:
       id: alpine-version
       attributes:
         label: Alpine Version
-        description: What version of Laravel are you running? Please be as specific as possible
+        description: What version of AlpineJS are you running? Please be as specific as possible
         placeholder: 3.1.12
       validations:
         required: true

@@ -186,8 +186,8 @@ class ReorderingVisualsTest extends TestCase
             ->set('page', 3)
             ->call('enableReordering')
             ->assertSet('page', 1);
-//            ->call('disableReordering') // TODO: Don't work
-//            ->assertSet('page', 3);
+        //            ->call('disableReordering') // TODO: Don't work
+        //            ->assertSet('page', 3);
     }
 
     /** @test */
